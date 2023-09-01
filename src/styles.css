@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import the Slick Carousel CSS */
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+
+.myslide{
+  background:red;
+}
+
+@media(width<800px){
+
+.mb-nav{
+  position: fixed;
+  background: black;
+  left: -100vw;
+  top: 0;
+  width: 100%;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px;
+  height: 100vh;
+  transition: all 1s;
+  z-index: 99;
+  transform: translateZ(1000px);
+
+}
+}
+/* ... Other styles ... */
+
+/* Animation for fade-in */
+.fade-in {
+    animation: fadeIn ease-in-out 1;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  
+
+  
