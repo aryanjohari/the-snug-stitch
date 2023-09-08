@@ -75,20 +75,20 @@ export const Men = () => {
           <div className="px-4 py-6 border-b-2">
             <ul className="mt-6 space-y-2">
               <li>
-                <Link
-                  to="/Men"
+                <a
+                  href="/Men"
                   className="block rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700"
                 >
                   All
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to="/men-tshirts"
+                <a
+                  href="/men-tshirts"
                   className="block rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700"
                 >
                   T-shirts
-                </Link>
+                </a>
               </li>
               <li>
                 <Link

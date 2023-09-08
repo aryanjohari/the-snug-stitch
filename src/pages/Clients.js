@@ -38,48 +38,118 @@ export const Clients = () => {
           <div className="-m-1 flex flex-wrap md:-m-2">
             <div className="flex w-1/2 flex-wrap">
               <div className="w-1/2 p-1 md:p-2">
+                <a href="https://www.3folksmedia.com/" className="cursor-pointer">
                 <img
                   alt="gallery"
                   className="block h-full w-full rounded-lg object-cover object-center"
                   src="/images/clients/3FM LOGO.jpeg"
                 />
+                </a>
               </div>
               <div className="w-1/2 p-1 md:p-2">
+                <a href="https://www.tcetmumbai.in/" className="cursor-pointer">
                 <img
                   alt="gallery"
                   className="block h-full w-full rounded-lg object-cover object-center"
                   src="/images/clients/5ntf3oqg.jbg.webp"
                 />
+                </a>
               </div>
               <div className="w-full p-1 md:p-2">
+                <a href="https://koverify.in/" className="cursor-pointer">
                 <img
                   alt="gallery"
                   className="block h-full w-full rounded-lg object-cover object-center"
                   src="/images/clients/koverify.jpg"
                 />
+                </a>
               </div>
             </div>
             <div className="flex w-1/2 flex-wrap">
               <div className="w-full p-1 md:p-2">
+                <a href="https://besick.in/" className="cursor-pointer">
                 <img
                   alt="gallery"
                   className="block h-full w-full rounded-lg object-cover object-center"
                   src="/images/clients/BESICK LOGO.png"
                 />
+                </a>
               </div>
               <div className="w-1/2 p-1 md:p-2">
+                <a href="https://atharvacoe.ac.in/" className="cursor-pointer">
                 <img
                   alt="gallery"
                   className="block h-full w-full rounded-lg object-cover object-center"
                   src="/images/clients/atharva.png"
                 />
+                </a>
               </div>
               <div className="w-1/2 p-1 md:p-2">
+                <a href="https://securanx.com/" className="cursor-pointer">
                 <img
                   alt="gallery"
                   className="block h-full w-full rounded-lg object-cover object-center"
                   src="/images/clients/securanx.jpg"
                 />
+                </a>
+              </div>
+            </div>
+            <div className="flex w-1/2 flex-wrap">
+              <div className="w-1/2 p-1 md:p-2 hidden">
+                <a href="https://www.3folksmedia.com/" className="cursor-pointer">
+                <img
+                  alt="gallery"
+                  className="block h-full w-full rounded-lg object-cover object-center"
+                  src="/images/clients/dj-logo.png"
+                />
+                </a>
+              </div>
+              <div className="w-1/2 p-1 md:p-2 ">
+                <a href="https://www.djsce.ac.in/" className="cursor-pointer">
+                <img
+                  alt="gallery"
+                  className="block h-full w-full rounded-lg object-cover object-center"
+                  src="/images/clients/dj-logo.png"
+                />
+                </a>
+              </div>
+              <div className="w-full p-1 md:p-2">
+                <a href="https://www.instagram.com/monsterpokercommunity/?hl=en" className="cursor-pointer">
+                <img
+                  alt="gallery"
+                  className="block h-full w-full rounded-lg object-cover object-center"
+                  src="/images/clients/monster-logo.jpeg"
+                />
+                </a>
+              </div>
+            </div>
+            <div className="flex w-1/2 flex-wrap">
+              <div className="w-full p-1 md:p-2">
+                <a href="https://www.sharekhan.com/" className="cursor-pointer">
+                <img
+                  alt="gallery"
+                  className="block h-full w-full rounded-lg object-cover object-center"
+                  src="/images/clients/sharekhan-logo.jpeg"
+                />
+                </a>
+              </div>
+              <div className="w-1/2 p-1 md:p-2">
+                <a href="https://rgmctmc.edu.in/" className="cursor-pointer">
+                <img
+                  alt="gallery"
+                  className="block h-full w-full rounded-lg object-cover object-center"
+                  src="/images/clients/rajiv-logo.jpeg"
+                />
+                </a>
+              </div>
+              <div className="w-1/2 p-1 md:p-2 hidden">
+                <a href="https://www.rapodar.ac.in/" className="cursor-pointer">
+                <img
+                  alt="gallery"
+                  className="block h-full w-full rounded-lg object-cover object-center"
+                  src="/images/clients/podar-logo.png"
+                />
+                </a>
               </div>
             </div>
           </div>

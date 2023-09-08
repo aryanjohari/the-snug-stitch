@@ -166,120 +166,269 @@ const HeroSection = () => {
           </div>
         </div>
       </section>
-      <div className="px-20 pt-10 lg:grid lg:grid-cols-4">
-        <a
-          href=""
-          className="group relative block h-64 sm:h-80 lg:h-96 w-72"
-          data-aos="fade-right"
-        >
-          <span className="absolute inset-0 border-2 border-dashed border-black" />
-          <div className="relative flex h-full transform items-end border-2 border-black bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2 bg-fabric-selection bg-cover">
-            <div className="backdrop-blur-sm h-full">
-              <div className="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8 mt-32 text-white">
-                <img src="/images/icons/premium.png" alt="" />
-                <h2 className="mt-4 text-xl sm:text-2xl font-extrabold text-white">
-                  Premium Handcrafted Fabrics
-                </h2>
-              </div>
-              <div className="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
-                <h3 className="mt-4 text-xl font-medium sm:text-2xl text-white">
-                  Premium Handcrafted Fabrics
-                </h3>
-                <p className="mt-4 text-sm sm:text-base text-white">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Cupiditate, praesentium voluptatem omnis atque culpa
-                  repellendus.
+      <div className="w-full text-center uppercase text-5xl mt-36 font-bold">our bestsellers</div>
+      <section className="grid lg:grid-cols-4 grid-cols-2 gap-1 lg:gap-4 mx-7 mt-14">
+        <div className="group relative block bg-black">
+          <img
+            alt="Hoodie"
+            src="/images/products/men/hoodie men plain.jpg"
+            className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+          />
+          <div className="relative p-4 sm:p-6 lg:p-8">
+            <p className="text-xl font-bold text-white sm:text-2xl">Hoodies</p>
+            <div className="flex">
+              <a href="/men-hoodies" className="hover:scale-110">
+                <p className="text-sm font-medium uppercase tracking-widest text-white mr-2">
+                  men
                 </p>
+              </a>
+              <p className="text-sm font-medium uppercase tracking-widest text-white mx-2">
+                |
+              </p>
+              <a href="/women-hoodies" className="hover:scale-110">
+                <p className="text-sm font-medium uppercase tracking-widest text-white mx-2">
+                  women
+                </p>
+              </a>
+            </div>
+            <div className="mt-32 sm:mt-48 lg:mt-64">
+              <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100 flex flex-col">
+              <p className="text-md text-white w-full text-center font-bold">
+                A cozy fashion staple that keeps you warm and in vogue.</p>
+                <br></br>
+              <p className="text-md text-white font-bold">&#8226; 320 GSM</p>
+              <p className="text-md text-white font-bold">&#8226; PC fleece material</p>
               </div>
             </div>
           </div>
-        </a>
-        <a
-          href=""
-          className="group relative block h-64 sm:h-80 lg:h-96 w-72"
-          data-aos="fade-up"
-        >
-          <span className="absolute inset-0 border-2 border-dashed border-black" />
-          <div className="relative flex h-full transform items-end border-2 border-black bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2 bg-on-time bg-cover">
-            <div className=" backdrop-blur-sm h-full w-full">
-              <div className="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8 mt-32 text-white">
-                <img src="/images/icons/delivery.png" alt="" />
-                <h2 className="mt-4 text-xl font-extrabold text-white sm:text-2xl">
-                  On Time Delivery
-                </h2>
-              </div>
-              <div className="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
-                <h3 className="mt-4 text-xl font-medium sm:text-2xl text-white">
-                  On Time Delivery
-                </h3>
-                <p className="mt-4 text-sm sm:text-base text-white">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Cupiditate, praesentium voluptatem omnis atque culpa
-                  repellendus.
+        </div>
+        <div className="group relative block bg-black">
+          <img
+            alt="Varsity"
+            src="/images/products/men/MEN VARSITY.jpg"
+            className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+          />
+          <div className="relative p-4 sm:p-6 lg:p-8">
+            <p className="text-xl font-bold text-white sm:text-2xl">Jackets</p>
+            <div className="flex">
+              <a href="/men-jackets" className="hover:scale-110">
+                <p className="text-sm font-medium uppercase tracking-widest text-white mr-2">
+                  men
                 </p>
+              </a>
+              <p className="text-sm font-medium uppercase tracking-widest text-white mx-2">
+                |
+              </p>
+              <a href="/women-jackets" className="hover:scale-110">
+                <p className="text-sm font-medium uppercase tracking-widest text-white mx-2">
+                  women
+                </p>
+              </a>
+            </div>
+            <div className="mt-32 sm:mt-48 lg:mt-64">
+              <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100 flex flex-col">
+                <p className="text-md text-white font-bold">
+                The ultimate blend of practicality and fashion for any occasion
+                </p>
+                <br></br>
+                <p className="text-md text-white font-bold">&#8226; 320 GSM</p>
+              <p className="text-md text-white font-bold">&#8226; PC fleece material</p>
               </div>
             </div>
           </div>
-        </a>
-        <a
-          href=""
-          className="group relative block h-64 sm:h-80 lg:h-96 w-72"
-          data-aos="fade-down"
-        >
-          <span className="absolute inset-0 border-2 border-dashed border-black" />
-          <div className="relative flex h-full transform items-end border-2 border-black bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2 bg-in-house bg-cover">
-            <div className="backdrop-blur-sm h-full">
-              <div className="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8 mt-32 text-white">
-                <img src="/images/icons/manufacture.png" alt="" />
-                <h2 className="mt-4 text-xl font-extrabold text-white sm:text-2xl">
-                  In-house Cut-to-pack
-                </h2>
-              </div>
-              <div className="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
-                <h3 className="mt-4 text-xl font-medium sm:text-2xl text-white">
-                  In-house Cut-to-pack
-                </h3>
-                <p className="mt-4 text-sm sm:text-base text-white">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Cupiditate, praesentium voluptatem omnis atque culpa
-                  repellendus.
+        </div>
+        <div className="group relative block bg-black">
+          <img
+            alt="Sweatshirt"
+            src="/images/products/men/men oversize sweatshirt.jpg"
+            className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+          />
+          <div className="relative p-4 sm:p-6 lg:p-8">
+            <p className="text-xl font-bold text-white sm:text-2xl">Sweatshirts</p>
+            <div className="flex">
+              <a href="/men-sweatshirts" className="hover:scale-110">
+                <p className="text-sm font-medium uppercase tracking-widest text-white mr-2">
+                  men
                 </p>
+              </a>
+              <p className="text-sm font-medium uppercase tracking-widest text-white mx-2">
+                |
+              </p>
+              <a href="/women-sweatshirts" className="hover:scale-110">
+                <p className="text-sm font-medium uppercase tracking-widest text-white mx-2">
+                  women
+                </p>
+              </a>
+            </div>
+            <div className="mt-32 sm:mt-48 lg:mt-64">
+              <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                <p className="text-md text-white w-full text-center font-bold">
+                Cozy, stylish essentials that keep you warm and effortlessly on-trend
+                </p>
+                <br></br>
+                <p className="text-md text-white font-bold">&#8226; 280 GSM</p>
+              <p className="text-md text-white font-bold">&#8226; PC fleece material</p>
               </div>
             </div>
           </div>
-        </a>
-        <a
-          href=""
-          className="group relative block h-64 sm:h-80 lg:h-96 w-72"
-          data-aos="fade-left"
-        >
-          <span className="absolute inset-0 border-2 border-dashed border-black" />
-          <div className="relative flex h-full transform items-end border-2 border-black bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2 bg-quality-affordable bg-cover">
-            <div className="backdrop-blur-sm h-full">
-              <div className="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8 mt-32 text-white">
-                <img src="/images/icons/fabric.png" alt="" />
-                <h2 className="mt-4 text-xl font-extrabold sm:text-2xl text-white">
-                  Quality With Affordability
-                </h2>
-              </div>
-              <div className="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
-                <h3 className="mt-4 text-xl font-medium sm:text-2xl text-white">
-                  Quality With Affordability
-                </h3>
-                <p className="mt-4 text-sm sm:text-base text-white">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Cupiditate, praesentium voluptatem omnis atque culpa
-                  repellendus.
+        </div>
+        <div className="group relative block bg-black">
+          <img
+            alt="Tshirt"
+            src="/images/products/men/oversize tshirt.jpg"
+            className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+          />
+          <div className="relative p-4 sm:p-6 lg:p-8">
+            <p className="text-xl font-bold text-white sm:text-2xl">T-shirts</p>
+            <div className="flex">
+              <a href="/men-tshirts" className="hover:scale-110">
+                <p className="text-sm font-medium uppercase tracking-widest text-white mr-2">
+                  men
                 </p>
+              </a>
+              <p className="text-sm font-medium uppercase tracking-widest text-white mx-2">
+                |
+              </p>
+              <a href="/women-tshirts" className="hover:scale-110">
+                <p className="text-sm font-medium uppercase tracking-widest text-white mx-2">
+                  women
+                </p>
+              </a>
+            </div>
+            <div className="mt-32 sm:mt-48 lg:mt-64">
+              <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                <p className="text-md text-white w-full text-center font-bold">
+                Casual elegance for a relaxed yet fashionable look
+                </p>
+                <br></br>
+                <p className="text-md text-white font-bold">&#8226; 220 GSM</p>
+              <p className="text-md text-white font-bold">&#8226; Cotton</p>
               </div>
             </div>
           </div>
-        </a>
-      </div>
-      <div className="mt-20">
-        <h3 className="text-center font-extrabold text-5xl">
-          Our Clients
+        </div>
+      </section>
+      <section className="mt-36">
+        <h3 className="w-full text-center uppercase font-extrabold text-6xl">
+          {" "}
+          why choose us{" "}
         </h3>
+        <div className="px-20 pt-10 lg:grid lg:grid-cols-4">
+          <a
+            href=""
+            className="group relative block h-64 sm:h-80 lg:h-96 w-72"
+            data-aos="fade-right"
+          >
+            <span className="absolute inset-0 border-2 border-dashed border-black" />
+            <div className="relative flex h-full transform items-end border-2 border-black bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2 bg-fabric-selection bg-cover">
+              <div className="backdrop-blur-sm h-full">
+                <div className="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8 mt-32 text-white">
+                  <img src="/images/icons/premium.png" alt="" />
+                  <h2 className="mt-4 text-xl sm:text-2xl font-extrabold text-white">
+                    Premium Handcrafted Fabrics
+                  </h2>
+                </div>
+                <div className="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
+                  <h3 className="mt-4 text-xl font-medium sm:text-2xl text-white">
+                    Premium Handcrafted Fabrics
+                  </h3>
+                  <p className="mt-4 text-sm sm:text-base text-white">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Cupiditate, praesentium voluptatem omnis atque culpa
+                    repellendus.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            href=""
+            className="group relative block h-64 sm:h-80 lg:h-96 w-72"
+            data-aos="fade-up"
+          >
+            <span className="absolute inset-0 border-2 border-dashed border-black" />
+            <div className="relative flex h-full transform items-end border-2 border-black bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2 bg-on-time bg-cover">
+              <div className=" backdrop-blur-sm h-full w-full">
+                <div className="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8 mt-32 text-white">
+                  <img src="/images/icons/delivery.png" alt="" />
+                  <h2 className="mt-4 text-xl font-extrabold text-white sm:text-2xl">
+                    On Time Delivery
+                  </h2>
+                </div>
+                <div className="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
+                  <h3 className="mt-4 text-xl font-medium sm:text-2xl text-white">
+                    On Time Delivery
+                  </h3>
+                  <p className="mt-4 text-sm sm:text-base text-white">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Cupiditate, praesentium voluptatem omnis atque culpa
+                    repellendus.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            href=""
+            className="group relative block h-64 sm:h-80 lg:h-96 w-72"
+            data-aos="fade-down"
+          >
+            <span className="absolute inset-0 border-2 border-dashed border-black" />
+            <div className="relative flex h-full transform items-end border-2 border-black bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2 bg-in-house bg-cover">
+              <div className="backdrop-blur-sm h-full">
+                <div className="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8 mt-32 text-white">
+                  <img src="/images/icons/manufacture.png" alt="" />
+                  <h2 className="mt-4 text-xl font-extrabold text-white sm:text-2xl">
+                    In-house Cut-to-pack
+                  </h2>
+                </div>
+                <div className="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
+                  <h3 className="mt-4 text-xl font-medium sm:text-2xl text-white">
+                    In-house Cut-to-pack
+                  </h3>
+                  <p className="mt-4 text-sm sm:text-base text-white">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Cupiditate, praesentium voluptatem omnis atque culpa
+                    repellendus.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            href=""
+            className="group relative block h-64 sm:h-80 lg:h-96 w-72"
+            data-aos="fade-left"
+          >
+            <span className="absolute inset-0 border-2 border-dashed border-black" />
+            <div className="relative flex h-full transform items-end border-2 border-black bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2 bg-quality-affordable bg-cover">
+              <div className="backdrop-blur-sm h-full">
+                <div className="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8 mt-32 text-white">
+                  <img src="/images/icons/fabric.png" alt="" />
+                  <h2 className="mt-4 text-xl font-extrabold sm:text-2xl text-white">
+                    Quality With Affordability
+                  </h2>
+                </div>
+                <div className="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
+                  <h3 className="mt-4 text-xl font-medium sm:text-2xl text-white">
+                    Quality With Affordability
+                  </h3>
+                  <p className="mt-4 text-sm sm:text-base text-white">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Cupiditate, praesentium voluptatem omnis atque culpa
+                    repellendus.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div className="mt-36">
+          <img src="/images/infographic.png" alt="process"></img>
+        </div>
+      </section>
+      <div className="mt-36">
+        <h3 className="text-center font-extrabold text-5xl">Our Clients</h3>
         <div className="">
           <Marquee>
             {clients.map((client) => {

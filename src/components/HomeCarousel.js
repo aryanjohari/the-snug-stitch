@@ -1,8 +1,8 @@
 const HomeCarousel = () => {
   let imglist = [
-    "/images/banner1.jpg",
-    "/images/banner2.jpg",
-    "/images/banner3.jpg",
+    "/images/banner1.jpeg",
+    "/images/banner2.jpeg",
+    "/images/banner3.jpeg",
     "/images/banner4.jpg",
   ];
 
@@ -35,7 +35,7 @@ const HomeCarousel = () => {
           </div>
         </Slider> */}
 
-        <img id="crousalimg" src="/images/banner1.jpg" alt="" />
+        <img id="crousalimg" src="/images/banner1.jpeg" alt="" />
       </div>
     </div>
   );

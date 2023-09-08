@@ -48,7 +48,7 @@ const CustomForm = ({ status, message, onValidated }) => {
             Name
           </label>
           <input
-            className="w-96 rounded-lg h-8 border-2 border-black"
+            className="w-96 rounded-lg h-8 border-2 border-black p-2"
             placeholder="Enter your name"
             type="text"
             name="firstName"
@@ -64,7 +64,7 @@ const CustomForm = ({ status, message, onValidated }) => {
             Last Name
           </label>
           <input
-            className="w-full rounded-lg h-8 border-2 border-black"
+            className="w-full rounded-lg h-8 border-2 border-black p-2"
             placeholder="Enter your last name"
             type="text"
             name="lastName"
@@ -80,7 +80,7 @@ const CustomForm = ({ status, message, onValidated }) => {
             Email
           </label>
           <input
-            className="w-full rounded-lg h-8 border-2 border-black"
+            className="w-full rounded-lg h-8 border-2 border-black p-2"
             placeholder="Enter your email"
             type="text"
             name="email"
@@ -95,7 +95,7 @@ const CustomForm = ({ status, message, onValidated }) => {
             Number
           </label>
           <input
-            className="w-full rounded-lg h-8 border-2 border-black"
+            className="w-full rounded-lg h-8 border-2 border-black p-2"
             placeholder="Enter your number"
             type="text"
             name="number"
@@ -106,7 +106,7 @@ const CustomForm = ({ status, message, onValidated }) => {
           />
         </div>
       </div>
-      <button type="submit" className="hover:bg-blue-900 hover:text-white w-20 h-10 rounded-lg text-black bg-white">
+      <button type="submit" className="hover:bg-white hover:border-2 hover:border-black hover:text-black w-20 h-10 rounded-lg text-white bg-black cursor-pointer">
         submit
       </button>
     </form>
