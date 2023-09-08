@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import MailchimpFormContainer from "./MailChimpSubscribeForm";
 
 export const Footer = () => {
   return (
@@ -11,30 +12,8 @@ export const Footer = () => {
 */}
       <footer className="bg-black">
         <div className="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-md">
-            <strong className="block text-center text-xl font-bold sm:text-3xl text-white">
-              Want to recieve exiting offers?
-            </strong>
-            <form className="mt-6">
-              <div className="relative max-w-lg">
-                <label className="sr-only" htmlFor="email">
-                  {" "}
-                  Email{" "}
-                </label>
-                <input
-                  className="w-full rounded-full border-gray-200 bg-gray-100 p-4 pe-32 text-sm font-medium"
-                  id="email"
-                  type="email"
-                  placeholder="john@doe.com"
-                />
-                <button className="absolute end-1 top-1/2 -translate-y-1/2 rounded-full bg-blue-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-blue-700">
-                  Subscribe
-                </button>
-              </div>
-            </form>
-          </div>
-          <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-96">
-            <div className="mx-auto max-w-sm lg:max-w-none">
+          <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-3 lg:gap-20">
+            <div className="mx-auto max-w-sm lg:max-w-none lg:mt-24">
               <div className="flex">
               <img src="/images/logo.jpg" alt="logo" className="h-32 w-32"/>
               <img src="/images/logoname.jpg" alt="logo-name" className="h-32"/>
@@ -62,7 +41,13 @@ export const Footer = () => {
                 </Link>
               </div>
             </div>
-            <div className="grid grid-cols-1 gap-8 text-center lg:grid-cols-3 lg:text-left">
+            <div className="">
+            <strong className="block text-center text-xl font-bold sm:text-3xl text-white">
+              Want to recieve exiting offers?
+            </strong>
+            <MailchimpFormContainer/>
+          </div>
+            <div className="grid grid-cols-2 gap-8 text-center lg:grid-cols-3 lg:text-left lg:mt-20 ml-5">
               <div>
                 <strong className="font-medium text-gray-900">
                   {" "}

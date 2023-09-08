@@ -1,12 +1,17 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
+import EmailSentPopup from '../components/EmailSentPopup';
 
 export const Contact = () => {
+  const [isEmailSent, setIsEmailSent] = useState(false);
   const [formErrors, setFormErrors] = useState({});
   const [formData, setFormData] = useState({
     name: "",
     companyName: "",
     email: "",
+    number: "",
+    productName : "",
+    quantity : "",
     message: "",
   });
 
@@ -25,7 +30,10 @@ export const Contact = () => {
     if (!formData.companyName) errors.companyName = "Company name is required";
     if (!formData.phone) errors.phone = "Phone number is required";
     if (!formData.email) errors.email = "Email is required";
+    if (!formData.productName) errors.productName = "Product Name is required";
+    if(!formData.quantity) errors.quantity = "Quantity is required";
     if (!formData.message) errors.message = "Message is required";
+    if (!formData.number) errors.message = "Number is required";
     return errors;
   };
 
@@ -35,20 +43,29 @@ export const Contact = () => {
     if (Object.keys(errors).length > 0) {
       setFormErrors(errors);
     }
+    console.log("email")
     try {
-      emailjs
-        .sendForm(
-          "service_ofzht0c",
-          "template_i5cjhra",
-          formData,
-          "XHVM0_35vRrk3kiG2"
-        )
+      emailjs.send("service_ofzht0c","template_i5cjhra",{
+        to_name: "Koverify",
+        name: formData.name,
+        company: formData.companyName,
+        message: formData.message,
+        number: formData.number,
+        quantity: formData.quantity,
+        subject: formData.productName,
+        reply_to: formData.email,
+        },"XHVM0_35vRrk3kiG2");
+        
       setFormData({
         name: "",
         companyName: "",
         email: "",
+        productName: "",
+        quantity: "",
         message: "",
+        number: "",
       });
+      setIsEmailSent(true);
     } catch (error) {
       console.error("Error sending email:", error);
     }
@@ -86,6 +103,7 @@ export const Contact = () => {
                 id="name"
                 value={formData.name}
                 onChange={handleInputChange}
+                required
               />
               {formErrors.name && (
                 <p className="mt-1 text-xs text-red-500">{formErrors.name}</p>
@@ -105,6 +123,7 @@ export const Contact = () => {
                 id="companyName"
                 value={formData.companyName}
                 onChange={handleInputChange}
+                required
               />
               {formErrors.name && (
                 <p className="mt-1 text-xs text-red-500">{formErrors.name}</p>
@@ -124,6 +143,67 @@ export const Contact = () => {
                 id="email"
                 value={formData.email}
                 onChange={handleInputChange}
+                required
+              />
+              {formErrors.name && (
+                <p className="mt-1 text-xs text-red-500">{formErrors.name}</p>
+              )}
+            </div>
+            <div className="m-3">
+              <label className="sr-only" htmlFor="productName">
+                Product Name
+              </label>
+              <input
+                className={`w-full rounded-lg border border-gray-900 p-3 text-sm ${
+                  formErrors.name ? "border-red-500" : "border-gray-300"
+                }`}
+                placeholder="Enter Product name"
+                type="text"
+                name="productName"
+                id="productName"
+                value={formData.productName}
+                onChange={handleInputChange}
+                required
+              />
+              {formErrors.productName && (
+                <p className="mt-1 text-xs text-red-500">{formErrors.productName}</p>
+              )}
+            </div>
+            <div className="m-3">
+              <label className="sr-only" htmlFor="quantity">
+                Quantity
+              </label>
+              <input
+                className={`w-full rounded-lg border border-gray-900 p-3 text-sm ${
+                  formErrors.name ? "border-red-500" : "border-gray-300"
+                }`}
+                placeholder="Enter quantity"
+                type="text"
+                name="quantity"
+                id="quantity"
+                value={formData.quantity}
+                onChange={handleInputChange}
+                required
+              />
+              {formErrors.quantity && (
+                <p className="mt-1 text-xs text-red-500">{formErrors.quantity}</p>
+              )}
+            </div>
+            <div className="m-3">
+              <label className="sr-only" htmlFor="number">
+                 Number
+              </label>
+              <input
+                className={`w-full rounded-lg border border-gray-900 p-3 text-sm ${
+                  formErrors.name ? "border-red-500" : "border-gray-300"
+                }`}
+                placeholder="Enter your number"
+                type="text"
+                name="number"
+                id="number"
+                value={formData.number}
+                onChange={handleInputChange}
+                required
               />
               {formErrors.name && (
                 <p className="mt-1 text-xs text-red-500">{formErrors.name}</p>
@@ -143,6 +223,7 @@ export const Contact = () => {
                 rows="7"
                 value={formData.message}
                 onChange={handleInputChange}
+                required
               />
               {formErrors.name && (
                 <p className="mt-1 text-xs text-red-500">{formErrors.name}</p>
@@ -154,6 +235,7 @@ export const Contact = () => {
               >
                 Submit
               </button>
+              <EmailSentPopup isOpen={isEmailSent} />
           </form>
         </div>
       </div>

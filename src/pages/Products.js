@@ -35,7 +35,7 @@ export const Products = () => {
       </div>
       <div>
         <section>
-          <div className="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8">
+          <div className="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8 relative">
             <header className="text-center">
               <h2 className="text-xl font-bold text-gray-900 sm:text-3xl">
                 New Collection
@@ -48,7 +48,7 @@ export const Products = () => {
             </header>
             <ul className="grid grid-cols-1 gap-4 mt-8 lg:grid-cols-2">
               <li>
-                <Link to='/Men' className="relative block group">
+                <Link to="/Men" className="relative block group">
                   <img
                     src="https://images.unsplash.com/photo-1618898909019-010e4e234c55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
                     alt=""
@@ -63,7 +63,7 @@ export const Products = () => {
                 </Link>
               </li>
               <li>
-                <Link to='/Women' className="relative block group">
+                <Link to="/Women" className="relative block group">
                   <img
                     src="https://images.unsplash.com/photo-1624623278313-a930126a11c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
                     alt=""
@@ -78,7 +78,7 @@ export const Products = () => {
                 </Link>
               </li>
               <li>
-                <Link to='/Kids' className="relative block group">
+                <Link to="/Kids" className="relative block group">
                   <img
                     src="https://images.unsplash.com/photo-1593795899768-947c4929449d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80"
                     alt=""
@@ -93,7 +93,7 @@ export const Products = () => {
                 </Link>
               </li>
               <li>
-                <Link to='/Accessories' className="relative block group">
+                <Link to="/Accessories" className="relative block group">
                   <img
                     src="https://images.unsplash.com/photo-1593795899768-947c4929449d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80"
                     alt=""
@@ -109,6 +109,12 @@ export const Products = () => {
                   </div>
                 </Link>
               </li>
+
+              <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[100%]">
+                <button className="bg-black text-white w-20">
+                  <a href="/contact">ENQUIRE NOW</a>
+                </button>
+              </div>
             </ul>
           </div>
         </section>
