@@ -12,7 +12,7 @@ const HomeCarousel = () => {
       document.getElementById("crousalimg").src = imglist[imgno];
       imgno++;
 
-      if (imgno >= imglist.length - 1) {
+      if (imgno >= imglist.length) {
         imgno = 0;
       }
     }
@@ -35,7 +35,7 @@ const HomeCarousel = () => {
           </div>
         </Slider> */}
 
-        <img id="crousalimg" src="/images/banner1.jpeg" alt="" />
+        <img id="crousalimg" src="/images/banner1.jpg" alt="" />
       </div>
     </div>
   );

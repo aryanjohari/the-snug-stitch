@@ -10,7 +10,7 @@ export const About = () => {
               <div className="relative h-64 sm:h-80 lg:h-full">
                 <img
                   alt="Logo"
-                  src="/images/process/cutting.jpg"
+                  src="/images/aboutus.avif"
                   className="absolute inset-0 h-full w-full object-cover"
                 />
               </div>

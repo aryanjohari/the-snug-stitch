@@ -33,9 +33,32 @@ export const Services = () => {
           </div>
         </section>
       </div>
-      <div>
-        
-      </div>
+      <section>
+        <div className="flex flex-wrap mt-10">
+          <div className="w-1/2 relative">
+            <a href="/Accessories" className="relative block group m-1">
+              <img
+                src="/images/services/varsity.jpg"
+                alt=""
+                className="object-cover w-full transition duration-500 aspect-square group-hover:opacity-50 rounded-md"
+              />
+              <div className="h-full w-full absolute translate-y-[-100%] text-center flex opacity-0 hover:opacity-100">
+                <h3 className="text-xl font-bold text-black m-auto uppercase">
+                  College Varsity jackets
+                </h3>
+              </div>
+            </a>
+          </div>
+          <div className="w-1/2 p-2">
+            <img
+              src="/images/services/cafe uniform.webp"
+              alt=""
+              className="object-cover w-full h-full rounded-md"
+            ></img>
+            <p></p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

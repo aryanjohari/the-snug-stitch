@@ -50,7 +50,7 @@ export const Products = () => {
               <li>
                 <Link to="/Men" className="relative block group">
                   <img
-                    src="https://images.unsplash.com/photo-1618898909019-010e4e234c55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                    src="/images/category/men2.jpeg"
                     alt=""
                     className="object-cover w-full transition duration-500 aspect-square group-hover:opacity-50"
                   />
@@ -62,7 +62,7 @@ export const Products = () => {
               <li>
                 <Link to="/Women" className="relative block group">
                   <img
-                    src="https://images.unsplash.com/photo-1624623278313-a930126a11c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                    src="images/category/women.jpeg"
                     alt=""
                     className="object-cover w-full transition duration-500 aspect-square group-hover:opacity-50"
                   />
@@ -74,7 +74,7 @@ export const Products = () => {
               <li>
                 <Link to="/Kids" className="relative block group">
                   <img
-                    src="https://images.unsplash.com/photo-1593795899768-947c4929449d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80"
+                    src="images/category/kids.jpeg"
                     alt=""
                     className="object-cover w-full transition duration-500 aspect-square group-hover:opacity-50"
                   />
@@ -84,9 +84,9 @@ export const Products = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/Accessories" className="relative block group">
+                <a href="/Accessories" className="relative block group">
                   <img
-                    src="https://images.unsplash.com/photo-1593795899768-947c4929449d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80"
+                    src="images/category/accessories.avif"
                     alt=""
                     className="object-cover w-full transition duration-500 aspect-square group-hover:opacity-50"
                   />
@@ -95,7 +95,7 @@ export const Products = () => {
                       Accessories
                     </h3>
                   </div>
-                </Link>
+                </a>
               </li>
 
               <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[50px]">
