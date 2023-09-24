@@ -1,27 +1,32 @@
-import React, { useEffect, useState } from 'react';
 
 const LoadingScreen = () => {
-  const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    // Simulate a loading delay (you can replace this with actual loading logic)
-    const loadingTimeout = setTimeout(() => {
-      setIsLoading(false);
-    }, 3000); // Adjust the duration as needed
+  const randomNum = Math.floor(Math.random()*(4-0+1))+ 0;
 
-    return () => clearTimeout(loadingTimeout);
-  }, []);
+  const loadingContent = [
+    "Hoodies: Because you don't have to dress fancy to look awesome.",
+    "T-shirts: The simplest canvas for the boldest ideas.",
+    "Jackets: The perfect blend of style and function for any weather.",
+    "Sweatshirts: The unofficial uniform of relaxation.",
+    "Varsity jackets: Where athleticism meets style in perfect harmony."
+  ]
 
-  if(isLoading){
-    return(
-        <div className={`fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black z-50 transition-opacity ${isLoading ? 'opacity-100' : 'opacity-0'}`}>
-      <div className="bg-indigo-500 p-6 rounded-full shadow-2xl">
-        <div className="h-16 w-16 border-t-4 border-t-indigo-200 border-solid rounded-full animate-spin"></div>
+  setTimeout(() => {
+    // window.onload = ()=>{
+     document.getElementById('loader').style.display = 'none';
+    // }
+   }, 4000);
+
+
+    return (
+      <div id="loader"
+        className={`fixed w-full h-full flex text-center items-center justify-center bg-white z-50 transition-opacity"
+        }`}
+      >
+        <h3 className="text-[30px] animate-pulse ">{loadingContent[randomNum]}</h3>
+        {/* <img src="https://www.zilliondesigns.com/blog/wp-content/uploads/triangle-spinner.gif" alt="" className="w-[250px]"/> */}
       </div>
-    </div>
     );
-  }
-  return null;
 };
 
 export default LoadingScreen;

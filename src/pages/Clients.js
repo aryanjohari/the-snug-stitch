@@ -142,12 +142,12 @@ export const Clients = () => {
                 />
                 </a>
               </div>
-              <div className="w-1/2 p-1 md:p-2 hidden">
-                <a href="https://www.rapodar.ac.in/" className="cursor-pointer">
+              <div className="w-1/2 p-1 md:p-2">
+                <a href="https://upgcm.ac.in/Index.aspx" className="cursor-pointer">
                 <img
                   alt="gallery"
                   className="block h-full w-full rounded-lg object-cover object-center"
-                  src="/images/clients/podar-logo.png"
+                  src="/images/clients/upg.jpeg"
                 />
                 </a>
               </div>

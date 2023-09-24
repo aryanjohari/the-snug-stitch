@@ -15,6 +15,7 @@ const HeroSection = () => {
     { image: "/images/clients/dj-logo.png" },
     { image: "/images/clients/rajiv-logo.jpeg" },
     { image: "/images/clients/sharekhan-logo.jpeg" },
+    { image: "images/clients/upg.jpeg"}
   ];
 
   let reviews = [
@@ -75,7 +76,7 @@ const HeroSection = () => {
               </p>
               <a
                 href="/contact"
-                className="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
+                className="mt-8 inline-block rounded bg-black px-12 py-3 text-sm font-medium text-white transition hover:bg-white hover:text-black hover:border hover:border-black"
               >
                 Get Started Today
               </a>
@@ -115,7 +116,7 @@ const HeroSection = () => {
               </p>
               <a
                 href="/contact"
-                className="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
+                className="mt-8 inline-block rounded bg-black px-12 py-3 text-sm font-medium text-white transition hover:bg-white hover:text-black hover:border hover:border-black "
               >
                 Get Started Today
               </a>
@@ -158,7 +159,7 @@ const HeroSection = () => {
               </p>
               <a
                 href="/comtact"
-                className="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
+                className="mt-8 inline-block rounded bg-black px-12 py-3 text-sm font-medium text-white transition hover:bg-white hover:text-black hover:border hover:border-black"
               >
                 Get Started Today
               </a>

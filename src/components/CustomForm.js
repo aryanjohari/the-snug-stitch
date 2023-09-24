@@ -106,7 +106,7 @@ const CustomForm = ({ status, message, onValidated }) => {
           />
         </div>
       </div>
-      <button type="submit" className="hover:bg-white hover:border-2 hover:border-black hover:text-black w-20 h-10 rounded-lg text-white bg-black cursor-pointer">
+      <button type="submit" className="hover:bg-white hover:border-2 hover:border-black hover:text-black w-20 h-10 rounded-lg text-white bg-black cursor-pointer uppercase">
         submit
       </button>
     </form>
