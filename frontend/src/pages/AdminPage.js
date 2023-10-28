@@ -17,7 +17,7 @@ export const AdminPage = () => {
         <div className="bg-black text-white h-screen flex flex-col justify-center items-center">
           <div className="float-right ">
             <span>{admin.email}</span>
-            <button onClick={handlelogout}>logout</button>
+            <button onClick={handlelogout} className="mx-5 bg-white text-black">logout</button>
           </div>
           <h1 className="text-4xl font-semibold mb-8">Admin Page</h1>
           <ul className="text-center">

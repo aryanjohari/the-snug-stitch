@@ -107,8 +107,8 @@ export const Header = () => {
                   </svg>
                 </button>
                 {isOpen && (
-                  <div className="relative">
-                    <ul class="space-y-1 absolute">
+                  <div className="relative bg-white">
+                    <ul class="space-y-1 absolute bg-gray-100">
                       <Link
                         to="/products"
                         className="block rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700"

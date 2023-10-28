@@ -21,15 +21,25 @@ export const About = () => {
 
               <div className="p-8 sm:p-16 lg:p-24">
                 <h2 className="text-2xl font-bold sm:text-3xl">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Tempore, debitis.
+                  About Us
                 </h2>
 
                 <p className="mt-4 text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Aliquid, molestiae! Quidem est esse numquam odio deleniti,
-                  beatae, magni dolores provident quaerat totam eos, aperiam
-                  architecto eius quis quibusdam fugiat dicta.
+                  The Snug Stitch is a well-known provider of custom clothes
+                  manufacturing, wholesale, and contract supply services. We
+                  specialize in offering a wide range of t-shirts, hoodies and jackets allowing
+                  customers to personalize their orders in terms of color, size,
+                  cuts, and styles.The Snug Stitch has built a strong reputation
+                  as the go-to supplier for start-ups, providing end-to-end
+                  solutions encompassing design, printing, and packaging.
+                  Additionally, they collaborate closely with corporate clients
+                  to deliver top-notch garments and t-shirts tailored for events
+                  and office use. With an extensive collection and diverse
+                  quality options, The Snug Stitch excels in custom printing on
+                  t-shirts, apparels, and fabrics. Their market reach extends
+                  throughout India, catering to various customers seeking
+                  customization. Their clientele includes start-ups, corporates,
+                  resellers, distributors, wholesalers, retailers, and traders.
                 </p>
 
                 <Link
